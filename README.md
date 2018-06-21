@@ -2,6 +2,10 @@
 
 Repository of all schemas for JSON structures compatible with HttpRunner.
 
+## Versions
+
+- [v0.0.1](docs/json/v1.json)
+
 ## Usage
 
 All the schemas in this repository are valid JSON Schemas, compliant with the [JSON-Schema, Draft 4][JSON-Schema].
