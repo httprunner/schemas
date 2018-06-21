@@ -17,7 +17,7 @@ import requests  # make sure this is installed
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
 
-schema = requests.get('http://schema.httprunner.org/json/v1/').json()
+schema = requests.get('http://schema.httprunner.org/json/v1.json').json()
 
 test_input = {}  # Whatever needs to be validated.
 
