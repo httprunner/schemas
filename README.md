@@ -4,7 +4,7 @@ Repository of all schemas for JSON structures compatible with HttpRunner.
 
 ## Versions
 
-- [v0.0.1](docs/json/v1.json)
+- [v0.0.1](json/v1.json)
 
 ## Usage
 

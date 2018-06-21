@@ -1,7 +1,0 @@
-site_name: HttpRunner Schemas
-pages:
-    - index.md
-theme: material
-google_analytics:
-  - 'UA-114587036-3'
-  - 'auto'
