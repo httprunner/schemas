@@ -8,7 +8,7 @@ All the schemas in this repository are valid JSON Schemas, compliant with the [J
 
 As such, they can be used with [jsonschema][jsonschema] to validate arbitrary JSON blobs, as show below:
 
-```
+```python
 import requests  # make sure this is installed
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
