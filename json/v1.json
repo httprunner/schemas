@@ -1,1 +1,65 @@
-{}
+{
+    "$schema": "http://json-schema.org/draft-06/schema",
+    "$id": "http://schema.httprunner.org/json/v1.json",
+    "title": "HttpRunner Schemas",
+    "description": "HttpRunner Schemas",
+    "type": "array",
+    "items": {
+        "oneOf": [
+            {"$ref": "#/definitions/config"},
+            {"$ref": "#/definitions/test"}
+        ]
+    },
+    "definitions": {
+        "config": {
+            "$id": "#/definitions/config",
+            "description": "testset config, used for public configuration",
+            "type": "object",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "properties": {
+                "config": {
+                    "$ref": "#/definitions/config_dict"
+                }
+            },
+            "required": ["config"]
+        },
+        "config_dict": {
+            "$id": "#/definitions/config_dict",
+            "description": "testcase description",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "testset name",
+                    "type": "string"
+                }
+            },
+            "required": ["name"]
+        },
+        "test": {
+            "$id": "#/definitions/test",
+            "description": "testcase description",
+            "type": "object",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "properties": {
+                "test": {
+                    "$ref": "#/definitions/test_dict"
+                }
+            },
+            "required": ["test"]
+        },
+        "test_dict": {
+            "$id": "#/definitions/test_dict",
+            "description": "testcase description",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "testcase name",
+                    "type": "string"
+                }
+            },
+            "required": ["name"]
+        }
+    }
+}
