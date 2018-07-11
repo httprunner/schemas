@@ -1,5 +1,7 @@
 # HttpRunner Schemas
 
+[![LICENSE](https://img.shields.io/github/license/HttpRunner/schemas.svg)](https://github.com/HttpRunner/schemas/blob/master/LICENSE) [![Build Status](https://travis-ci.org/HttpRunner/schemas.svg?branch=master)](https://travis-ci.org/HttpRunner/schemas)
+
 Repository of all schemas for JSON structures compatible with HttpRunner.
 
 ## Versions
